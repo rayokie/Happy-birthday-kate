@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy 18th Birthday Kate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cake-overlay">
+        <h2 id="cake-instructions">Hey Kate ❤️<br>Tap to start the surprise...</h2>
+        
+        <button id="mic-start-btn">START SURPRISE</button>
+
+        <div id="cake-scene" style="display:none; text-align:center;">
+            <div class="cake-container">
+                <div class="candle">
+                    <div class="flame" id="flame"></div>
+                </div>
+                <div id="cake" class="cake-fancy">
+                    <div class="layer layer-top"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="icing-drips"></div>
+                </div>
+                <div class="plate"></div>
+            </div>
+            
+            <p id="sub-instructions" style="color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-top: 40px; font-family: 'Montserrat', sans-serif;">
+                (Blow on the mic 🎤, then swipe down 👇)
+            </p>
+        </div>
+    </div>
+
+    <header id="hero">
+        <div class="hero-container">
+            <div class="hero-text-container fade-in">
+                <div class="badges-container">
+                    <div class="date-badge">
+                        <span class="est">EST.</span>
+                        <span class="year">2005</span>
+                    </div>
+                    <div class="hb-badge">HAPPY BIRTHDAY</div>
+                </div>
+                
+                <h1 class="main-title">A Celebration of</h1>
+                
+                <div class="name-container">
+                    <span class="name-prefix">Miss Shane</span>
+                    <span class="name-script">Kate</span>
+                    <span class="name-suffix">T. Marcial</span>
+                </div>
+                
+                <div class="message-box glass-card">
+                    <p>
+                        To the most incredible person, on your very special day. May your 18th year be filled with as much joy, love, and brilliance as you bring into the world. 
+                        <br><span class="gold-text">We love you dearly!</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="hero-image-container fade-in">
+                <img src="kate.png" alt="The Birthday Girl, Kate" class="hero-person-img">
+            </div>
+        </div>
+    </header>
+
+    <section id="poem-section">
+        <div class="glass-card fade-in">
+            <div class="content-wrapper">
+                <p class="poem-text">
+                    "Before names... Choices... Before forever... <br>
+                    400 Trillion no's existed in this universe, yet somehow one <i>yes</i> finds its way. <br><br>
+                    Tonight isn't about the future but the very special day, the very special moment, the person, my love <span class="gold-text">"You"</span>, Miss Kate, you!"
+                </p>
+                <div class="signature">Happy Birthday, Kate ❤️‍🩹 ✨</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery-1" class="gallery-section">
+        <div class="section-title">
+            <h3>Timeless Memories</h3>
+            <div class="divider-line" style="width: 100px; opacity: 0.5; margin: 10px auto; height: 1px; background: #e2c290;"></div>
+        </div>
+
+        <div class="glass-panel collapsible-gallery" id="gallery-timeless">
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="kate.jpg" alt="Memory"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Memory"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Memory"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Memory"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Memory"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Memory"></div>
+            </div>
+            <div class="fade-overlay"></div>
+        </div>
+
+        <div class="arrow-container">
+            <button class="arrow-btn" onclick="toggleGallery('gallery-timeless', this)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <section id="gallery-2" class="gallery-section">
+        <div class="section-title">
+            <h3>Our Memories</h3>
+            <p class="subtitle">Every moment with you is a treasure</p>
+        </div>
+
+        <div class="glass-panel collapsible-gallery" id="gallery-us">
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="kate.jpg" alt="Us"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Us"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Us"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Us"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Us"></div>
+                <div class="gallery-item"><img src="kate.jpg" alt="Us"></div>
+            </div>
+             <div class="fade-overlay"></div>
+        </div>
+
+        <div class="arrow-container">
+            <button class="arrow-btn" onclick="toggleGallery('gallery-us', this)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <section id="proposal-section" class="text-center">
+        <div class="glass-card proposal-box fade-in">
+            <div class="ring-icon">💍</div>
+            <h2 class="proposal-title">One Question</h2>
+            <p class="proposal-text">Will you be mine, today and always?</p>
+            
+            <div class="action-buttons">
+                <button id="yesBtn" class="premium-btn">YES, I WILL</button>
+                <button id="noBtn" class="ghost-btn" onmouseover="moveButton(this)">NO</button>
+            </div>
+
+            <div id="successMessage" style="display: none;">
+                <h2 class="gold-text">YAY! YOU SAID YES! 💖</h2>
+                <p>I knew it loveeeeeee.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>DESIGNED FOR KATE  |  INDIA & PHILIPPINES</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
